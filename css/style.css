@@ -1,12 +1,3 @@
-/* Colores
-    Principal : 
-    Sombra principal :
-    Secundario :
-    Sombra secundario :
-    Terciario :
-    Sombra terciario :
-*/
-
 * {
     margin: 0;
 	padding: 0;
@@ -14,7 +5,7 @@
     outline: 0;
     font-size: 100%;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif !important;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
 }
 
@@ -31,15 +22,18 @@ p {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 header {
@@ -289,15 +283,15 @@ footer {
     }
 
     h1 {
-        font-size: 21px;
+        font-size: 26px;
     }
     
     h2 {
-        font-size: 19px;
+        font-size: 21px;
     }
     
     h3 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .carousel {
@@ -331,15 +325,15 @@ footer {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .left-header a img {
