@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #D5ED9F;
-}
-
 p {
     font-size: 11px;
 }
@@ -38,10 +34,25 @@ h3 {
 
 header {
     display: flex;
-    background-color: #00712D;
+    background-color: #f7f7f7;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    width: 100%;
+}
+
+.advertisements {
+    background-color: #f0b42c;
+    width: 100%;
+    height: 30px;
+}
+
+.header-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 58px;
 }
 
 .left-header, .right-header {
@@ -51,24 +62,41 @@ header {
     align-items: center;
 }
 
-.left-header a img {
-    margin-left: 2px;
+.left-header a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.middle-header a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.middle-header a img {
+    width: 160px;
 }
 
 .right-header {
-    padding: 0 10px;
+    width: 30px;
 }
+
 
 .home-navbar {
     display: flex;
     flex-direction: column;
-    background-color: #ECECEC;
+    background-color: #f7f7f7;
     width: 100%;
     height: 0;
     overflow: hidden;
     z-index: 150;
     transition: .5s ease-out;
     position: relative;
+    border: none;
 }
 
 .show {
@@ -80,7 +108,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #00712D;
+    background-color: #f7f7f7;
 }
 
 .navbar-list li {
@@ -96,12 +124,12 @@ header {
     cursor: pointer;
     padding: 10px;
     text-decoration: none;
-    color: rgb(234, 241, 235);
+    color: #44743c;
+    font-size: 12px;
 }
 
 .navbar-list li:hover{
-    background-color: #88d6a7;
-    
+    background-color: #eeeeee;
 }
 
 main {
@@ -164,6 +192,10 @@ main {
 .main-section h1{
     text-align: center;
     margin-bottom: 24px;
+}
+
+.about-section p {
+    padding: 6px;
 }
 
 .carousel-container {
@@ -244,9 +276,17 @@ main {
     color: rgb(77, 78, 82);
 }
 
+.offers {
+    width: 100%;
+    height: 300px;
+    background-color: #44743c;
+    margin-bottom: 80px;
+}
+
 footer {
     width: 100%;
-    background-color: #FF9100;
+    color: #44743c;
+    background: rgba(13, 14, 13, 0.897);
 }
 
 .footer-image {
@@ -271,7 +311,7 @@ footer {
     width: 90%;
     margin: 5px 5%;
     height: 1px;
-    background-color: #D5ED9F;
+    background-color: #44743c;
 }
 
 
@@ -292,11 +332,6 @@ footer {
     
     h3 {
         font-size: 17px;
-    }
-
-    .carousel {
-        width: 560px; 
-        height: 420px;
     }
 
     .landing-page-header {
@@ -336,29 +371,41 @@ footer {
         font-size: 18px;
     }
 
-    .left-header a img {
-        margin-left: 10px;
+    .header-sections {
+        height: 80px;
     }
+
+    .middle-header a img {
+        width: 210px;
+        margin-left: 10px;
+    }    
 
     .home-navbar {
         display: flex;
         flex-direction: row;
-        width: 600px;
+        width: 100%;
         height: 50px;
         transition: .5s ease-out;
         position: absolute;
-        top: 0;
-        left: 60px;
+        border-top: 1px solid #44743c9d;
+        border-bottom: 1px solid #44743c9d;
     }
 
     .navbar-list {
-        width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
 
-    .right-header {
+    .navbar-list li {
+        width: 140px;
+    }
+
+    .navbar-list li a {
+        font-size: 14px;
+    }
+
+    .left-header {
         display: none;
     }
 
@@ -368,12 +415,16 @@ footer {
     }
 
     .landing-page-header {
-        padding: 80px 0px 140px;
+        padding: 160px 0px 180px;
     }
 
     .stores-container {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .about-section p {
+        padding: 10px;
     }
 
     .stores-ubication {
