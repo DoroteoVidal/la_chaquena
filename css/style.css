@@ -307,6 +307,30 @@ main {
     height: 300px;
     background-color: #44743c;
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers div h4 {
+    margin-bottom: 30px;
+    color: #f7f7f7;
+}
+
+.offers div div h3, .offers div div h1 {
+    color: #f7f7f7;
+}
+
+.offers div div p {
+    margin-top: 30px;
+    color: #f7f7f7;
 }
 
 footer {
@@ -370,6 +394,31 @@ footer {
     width: 40px;
 }
 
+.paid-methods-section {
+    width: 100%;
+    border-top: 1px solid #44743c9d;
+    border-bottom: 1px solid #44743c9d;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.method-title h4 {
+    margin-top: 20px;
+    color: #44743c;
+}
+
+.method-cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.method-cards img {
+    width: 40px;
+}
+
 @media only screen and (min-width: 620px) {
 
     h1 {
@@ -414,7 +463,7 @@ footer {
     }
 
     h4 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .header-sections {
@@ -490,6 +539,10 @@ footer {
         grid-template-columns: auto auto auto auto;
     }
 
+    .footer-menu-section div {
+        padding: 14px;
+    }
+
     .footer-menu-section div h4 {
         margin-bottom: 10px;
     }
@@ -522,6 +575,19 @@ footer {
     .footer-social-media a img {
         width: 50px;
         height: 50px;
+    }
+
+    .paid-methods-section {
+        padding: 14px;
+        flex-direction: row;
+    }
+
+    .method-cards {
+        margin-left: 100px;
+    }
+
+    .method-cards img {
+        width: 50px;
     }
 
 }
