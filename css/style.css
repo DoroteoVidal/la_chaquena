@@ -419,6 +419,23 @@ footer {
     width: 40px;
 }
 
+.copyright-section {
+    width: 100%;
+    background-color: #44743c;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright-section div img {
+    width: 300px;
+}
+
+.copyright-section div p {
+    color: #f7f7f7;
+}
+
 @media only screen and (min-width: 620px) {
 
     h1 {
@@ -589,5 +606,9 @@ footer {
     .method-cards img {
         width: 50px;
     }
+
+    .copyright-section div img {
+        width: 400px;
+    }    
 
 }
