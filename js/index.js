@@ -28,10 +28,19 @@ document.addEventListener("DOMContentLoaded", function (){
 
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slides img');
+    const textSlides = document.querySelectorAll('.text-slides li');
     const totalSlides = slides.length;
+    const totalTextSlides = textSlides.length;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+
+        textSlides.forEach((slide, i) => {
             slide.classList.remove('active');
             if (i === index) {
                 slide.classList.add('active');
@@ -47,5 +56,4 @@ document.addEventListener("DOMContentLoaded", function (){
     showSlide(currentSlide);
 
     setInterval(nextSlide, 5000);
-    
 })
