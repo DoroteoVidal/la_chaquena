@@ -247,11 +247,10 @@ main {
 }
 
 .main-content {
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 40px 0;
-    background-image: url("../assets/images/greengrocery_background.jpg");
-    background-size:contain;
-    margin-bottom: 80px;
+    background-image: url("../assets/images/greengrocery_background.png");
+    background-size: contain;
 }
 
 .main-section {
@@ -335,6 +334,33 @@ main {
 .stores-ubication .stores-title h3 {
     margin-bottom: 10px;
     font-weight: 400;
+}
+
+.paid-methods-banner {
+    width: 100%;
+    height: 80px;
+    background-color: #f0b42c;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.paid-methods-banner h1 {
+    display: inline-block;
+    color: #f7f7f7;
+    animation: RightToLeft 8s infinite linear;
+    padding-left: 50%;
+}
+
+@keyframes RightToLeft {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-100%, 0);
+      }
 }
 
 .contact-section article {
@@ -618,6 +644,10 @@ footer {
 
     .stores-ubication {
         padding: 20px;
+    }
+
+    .paid-methods-banner h1 {
+        padding-left: 80%;
     }
 
     .contact-section article a {
