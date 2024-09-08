@@ -253,6 +253,10 @@ main {
     background-size: contain;
 }
 
+#contact {
+    margin-bottom: 0 !important;
+}
+
 .main-section {
     width: 80%;
     margin: 0 10%;
