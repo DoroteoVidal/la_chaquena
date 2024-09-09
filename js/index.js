@@ -1,5 +1,22 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", function (){
+
+    window.onscroll = function() {myFunction()};
+
+    let header = document.getElementById("myHeader");
+    let sticky = header.offsetTop;
+
+    function myFunction() {
+        if(window.innerWidth < 621) {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    }
+
+
     let hamburger = document.querySelector('#hamburger');
     let homeNavbarList = document.querySelector(".home-navbar");
 

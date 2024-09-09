@@ -5,7 +5,7 @@
     outline: 0;
     font-size: 100%;
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     list-style: none;
     text-decoration: none;
@@ -21,22 +21,32 @@ p {
 
 h1 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #44743c;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 600;
+    color: #313330;
 }
 
 h3 {
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f7f7f7;
 }
 
 h4 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #44743c;
 }
 
 header {
@@ -53,6 +63,13 @@ header {
     width: 100%;
     height: 30px;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
 
 .header-sections {
     display: flex;
@@ -270,10 +287,10 @@ main {
 .main-section h1{
     text-align: center;
     margin-bottom: 24px;
-    color: #44743c;
 }
 
 .about-section p {
+    text-align: justify;
     padding: 6px;
 }
 
@@ -335,14 +352,14 @@ main {
     width: 100%;
 }
 
-.stores-ubication .stores-title h3 {
+.stores-ubication .stores-title h2 {
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 450;
 }
 
 .paid-methods-banner {
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: #f0b42c;
     margin-bottom: 40px;
     display: flex;
@@ -351,11 +368,10 @@ main {
     overflow: hidden;
 }
 
-.paid-methods-banner h1 {
+.paid-methods-banner h3 {
     display: inline-block;
-    color: #f7f7f7;
-    animation: RightToLeft 8s infinite linear;
-    padding-left: 50%;
+    animation: RightToLeft 13s infinite linear;
+    padding-left: 60%;
 }
 
 @keyframes RightToLeft {
@@ -407,11 +423,6 @@ main {
 
 .offers div h4 {
     margin-bottom: 30px;
-    color: #f7f7f7;
-}
-
-.offers div div h3, .offers div div h1 {
-    color: #f7f7f7;
 }
 
 .offers div div p {
@@ -434,7 +445,6 @@ footer {
 }
 
 .footer-menu-section div h4 {
-    color: #44743c;
     margin-bottom: 6px;
 }
 
@@ -494,7 +504,6 @@ footer {
 
 .method-title h4 {
     margin-top: 20px;
-    color: #44743c;
 }
 
 .method-cards {
@@ -571,6 +580,10 @@ footer {
     }
 
     h4 {
+        font-size: 19px;
+    }
+
+    h5 {
         font-size: 18px;
     }
 
@@ -650,7 +663,8 @@ footer {
         padding: 20px;
     }
 
-    .paid-methods-banner h1 {
+    .paid-methods-banner h3 {
+        animation: RightToLeft 16s infinite linear;
         padding-left: 80%;
     }
 
