@@ -58,12 +58,6 @@ header {
     width: 100%;
 }
 
-.advertisements {
-    background-color: #f0b42c;
-    width: 100%;
-    height: 30px;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -169,7 +163,7 @@ main {
 .landing-page-hero {
     overflow: hidden;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
 }
 
 .text-slides {
@@ -185,7 +179,7 @@ main {
 
 .text-slides li {
     color: #f7f7f7;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     z-index: 3;
     opacity: 0;
@@ -234,7 +228,7 @@ main {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #0000004f;
+	background: #00000085;
     z-index: 1;
 }
 
@@ -639,7 +633,7 @@ footer {
     }
 
     .text-slides li {
-        font-size: 70px;
+        font-size: 78px;
     }
 
     .top-slider-shape {
