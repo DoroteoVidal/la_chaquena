@@ -163,7 +163,7 @@ main {
 .landing-page-hero {
     overflow: hidden;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .text-slides {
@@ -626,10 +626,6 @@ footer {
 
     .landing-page-header {
         top: 50px;
-    }
-
-    .landing-page-hero {
-        height: 100vh;
     }
 
     .text-slides li {
