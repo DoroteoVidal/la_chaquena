@@ -166,7 +166,7 @@ main {
 .landing-page-hero {
     overflow: hidden;
     width: 100%;
-    height: calc(98vh - 58px);
+    height: 80vh
 }
 
 .text-slides {
@@ -603,6 +603,10 @@ footer {
         position: absolute;
         border-top: 1px solid #44743c42;
         border-bottom: 1px solid #44743c42;
+    }
+
+    main {
+        top: auto;
     }
 
     .navbar-list {
